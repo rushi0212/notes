@@ -27,7 +27,7 @@ pipeline{
 
         stage('Push Image'){
             steps{
-                sh 'docker composepush'
+                sh 'docker compose push'
             }
         }
     }
