@@ -5,8 +5,10 @@ services:
     image: rushi1501/notes-backend:latest
     ports:
       - "3000:3000"
-    env_file:
-      - ./Backend/.env
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/devoops-notes
+      PORT: 3000
+    
     depends_on:
       - mongo
 
