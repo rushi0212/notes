@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                sh 'git https://github.com/rushi0212/notes.git'
+                git 'https://github.com/rushi0212/notes.git'
             }
         }
 
@@ -20,13 +20,13 @@ pipeline{
 
         stage('Build Image'){
             steps{
-                sh 'docker build -t rushi1501/notes:latest .'
+                sh 'docker compose build'
             }
         }
 
         stage('Push Image'){
             steps{
-                sh 'docker push rushi1501/notes:latest'
+                sh 'docker composepush'
             }
         }
     }
