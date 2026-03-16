@@ -8,7 +8,6 @@ services:
     environment:
       MONGO_URI: mongodb://mongo:27017/devoops-notes
       PORT: 3000
-    
     depends_on:
       - mongo
 
