@@ -16,7 +16,7 @@ services:
     build:
       context: ./Frontend
       args:
-        VITE_BACKEND_URL: http://backend:3000
+        VITE_BACKEND_URL: http://13.201.47.104:3000
         
     image: rushi1501/notes-frontend:latest
     ports:
