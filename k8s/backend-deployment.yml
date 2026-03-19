@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: your-dockerhub/backend:latest
+          image: rushi1501/notes-backend
           ports:
             - containerPort: 3000
           env:
